@@ -112,6 +112,12 @@ const Navbar = () => {
 
             <li>
               <button
+                onClick={() =>
+                  window.open(
+                    "https://github.com/Stefan10X/portofolio",
+                    "_blank"
+                  )
+                }
                 className="flex justify-center items-center gap-1 p-2 rounded-lg h-10 w-20
             transition ease-in-out delay-150 border-solid border-2 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-700 duration-300"
               >

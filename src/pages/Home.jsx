@@ -105,7 +105,7 @@ function Home() {
                   <button
                     onClick={() =>
                       window.open(
-                        "https://drive.google.com/file/d/1UOhF52kAZorthWmevHjp0zbqKApJUdVD/view?usp=drive_link",
+                        "https://drive.google.com/file/d/1GFgKBcBL2YEqkwL3WJzCOsiymGLNjbyZ/view?usp=drive_link",
                         "_blank"
                       )
                     }
