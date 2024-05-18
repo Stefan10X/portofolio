@@ -29,7 +29,11 @@ const Card2 = ({
           {name}
         </h5>
 
-        {!finished && <div>Work in progress</div>}
+        {!finished && (
+          <div className="self-center p-2 w-36 font-bold bg-yellow-300 rounded-lg">
+            Work in progress
+          </div>
+        )}
 
         <p className="text-xl md:text-2xl mb-3 font-normal text-gray-700 ">
           {description}
