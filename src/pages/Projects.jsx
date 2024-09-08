@@ -1,7 +1,7 @@
 import Card2 from "../components/Card2";
 import currency from "../images/currencyConvert.png";
 import dogs from "../images/dogsWorld.png";
-
+import nutritiousFoods from "../images/nutritiousFoods.png";
 import nutrition from "../images/nutritionApp.png";
 import Reveal from "../components/Reveal";
 
@@ -15,22 +15,22 @@ function Projects() {
           </h1>
           <Reveal>
             <Card2
-              teaser={currency}
-              width={"500px"}
-              name="Currency Exchange"
-              description="This is a currency exchange website with real time update for over 150 currencies."
-              link="https://github.com/Stefan10X/currency-exchange"
-              link2="https://currency-exchange-stefan.vercel.app/"
+              hosted={true}
+              teaser={nutritiousFoods}
+              width={"600px"}
+              name="Nutritious Foods"
+              description="This is an e-commerce restaurant online offering personalized meal selections tailored to your fitness needs. The application is built using React for frontend, and .NET for backend."
+              link="https://github.com/Stefan10X/nutritious-foods"
             />
           </Reveal>
           <Reveal>
             <Card2
-              teaser={nutrition}
-              width={"330px"}
-              name="Nutrition App"
-              description="In this website app you can add foods that you eat during the day and it will calculate the calories and protein based on your goal."
-              link="https://github.com/Stefan10X/nutrition-app"
-              link2="https://nutrition-app-stefan.vercel.app/"
+              teaser={currency}
+              width={"500px"}
+              name="Currency Exchange"
+              description="This is a currency exchange website with real time update for over 150 currencies. For this website I have used React JS with an online API"
+              link="https://github.com/Stefan10X/currency-exchange"
+              link2="https://currency-exchange-stefan.vercel.app/"
             />
           </Reveal>
           <Reveal>
@@ -38,9 +38,20 @@ function Projects() {
               teaser={dogs}
               width={"500px"}
               name="Dogs World"
-              description="This is a website containing info about a lot of dog breeds."
+              description="This is a website containing info about a lot of dog breeds. For this website I have used vanilla JavaScript with an online API"
               link="https://github.com/Stefan10X/Dogs-World"
               link2="https://stefan10x.github.io/Dogs-World/"
+            />
+          </Reveal>
+          <Reveal>
+            <Card2
+              finished={true}
+              teaser={nutrition}
+              width={"500px"}
+              name="Nutrition App"
+              description="In this website app you can add foods that you eat during the day and it will calculate the calories and protein based on your goal."
+              link="https://github.com/Stefan10X/nutrition-app"
+              link2="https://nutrition-app-stefan.vercel.app/"
             />
           </Reveal>
         </div>

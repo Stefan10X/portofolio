@@ -105,7 +105,7 @@ function Home() {
                   <button
                     onClick={() =>
                       window.open(
-                        "https://drive.google.com/file/d/1OBmmY17Fk6-8ibXmJaJ8cbQAy7rh_R_v/view?usp=sharing",
+                        "https://drive.google.com/file/d/1n0yyw116IZTDBkwjz8riYR2IrTiPLnVv/view?usp=sharing",
                         "_blank"
                       )
                     }

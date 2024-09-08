@@ -6,7 +6,7 @@ function Footer() {
       text-1xl bg-blue-600 text-white"
     >
       <p>Designed and Developed by Ștefan Pisică</p>
-      <p>Copyright © 2023 ȘP</p>
+      <p>Copyright © 2024 ȘP</p>
       <div className="flex gap-7">
         <svg
           onClick={() => window.open("https://github.com/Stefan10X", "_blank")}
