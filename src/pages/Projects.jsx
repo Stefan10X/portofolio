@@ -2,7 +2,6 @@ import Card2 from "../components/Card2";
 import currency from "../images/currencyConvert.png";
 import dogs from "../images/dogsWorld.png";
 import nutritiousFoods from "../images/nutritiousFoods.png";
-import nutrition from "../images/nutritionApp.png";
 import Reveal from "../components/Reveal";
 
 function Projects() {
@@ -41,17 +40,6 @@ function Projects() {
               description="This is a website containing info about a lot of dog breeds. For this website I have used vanilla JavaScript with an online API"
               link="https://github.com/Stefan10X/Dogs-World"
               link2="https://stefan10x.github.io/Dogs-World/"
-            />
-          </Reveal>
-          <Reveal>
-            <Card2
-              finished={true}
-              teaser={nutrition}
-              width={"500px"}
-              name="Nutrition App"
-              description="In this website app you can add foods that you eat during the day and it will calculate the calories and protein based on your goal."
-              link="https://github.com/Stefan10X/nutrition-app"
-              link2="https://nutrition-app-stefan.vercel.app/"
             />
           </Reveal>
         </div>

@@ -1,15 +1,6 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
-const Card2 = ({
-  teaser,
-  name,
-  description,
-  width,
-  link,
-  link2,
-  finished,
-  hosted,
-}) => {
+const Card2 = ({ teaser, name, description, width, link, link2, hosted }) => {
   return (
     <div
       className="flex flex-col items-center h-full w-96 md:w-[1000px] md:h-[430px] md:flex-row bg-white border-2 hover:border-gray-200 rounded-lg shadow
@@ -28,11 +19,6 @@ const Card2 = ({
         <h5 className="mb-2 text-2xl md:text-3xl font-bold tracking-tight text-gray-900  text-center">
           {name}
         </h5>
-        {finished && (
-          <h4 className="mb-2 text-lg md:text-xl font-bold tracking-tight text-white bg-yellow-300 w-44 mx-auto rounded-xl p-1 text-center">
-            work in progress
-          </h4>
-        )}
         <p className="text-xl md:text-2xl mb-3 font-normal text-gray-700 ">
           {description}
         </p>
