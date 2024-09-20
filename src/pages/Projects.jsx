@@ -8,18 +8,18 @@ function Projects() {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center">
       <div className="max-w-screen-xl mb-16">
-        <div className="flex flex-col mt-20 gap-10 items-center md:gap-16 ">
+        <div className="flex flex-col mt-12 xl:mt-20 gap-10 items-center md:gap-16 ">
           <h1 className="text-3xl md:text-4xl text-gray-900 text-center font-bold">
             These are my personal projects:{" "}
           </h1>
           <Reveal>
             <Card2
-              hosted={true}
               teaser={nutritiousFoods}
               width={"600px"}
               name="Nutritious Foods"
               description="This is an e-commerce restaurant online offering personalized meal selections tailored to your fitness needs. The application is built using React for frontend, and .NET for backend."
               link="https://github.com/Stefan10X/nutritious-foods"
+              link2="https://nutritious-foods.fly.dev/"
             />
           </Reveal>
           <Reveal>

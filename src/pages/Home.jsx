@@ -4,15 +4,22 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
 import { ReactComponent as LogoTailwind } from "../images/tailwind-logo.svg";
 import { ReactComponent as LogoPhotoshop } from "../images/Photoshop-logo.svg";
+import { ReactComponent as LogoCsharp } from "../images/csharp-logo.svg";
+import { ReactComponent as LogoDotnet } from "../images/Microsoft_.NET_logo.svg";
+import { ReactComponent as LogoPostgreSQL } from "../images/postgresql-logo.svg";
+import LogoEF from "../images/ef-logo.png";
+import LogoWordPress from "../images/wordpress-logo.png";
+import LogoFigma from "../images/figma-logo.png";
 import Reveal from "../components/Reveal";
 import { useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
 
 function Home() {
   const [text] = useTypewriter({
-    words: ["Frontend Developer", "Web Designer", "Photo Editor"],
+    words: ["FullStack Developer", "Web Designer", "Photo Editor"],
     loop: {},
   });
 
@@ -56,8 +63,8 @@ function Home() {
       </section>
       {/* Introduction */}
       <section className="bg-color-white">
-        <div className=" max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 justify-center">
-          <div className="flex flex-col gap-16 justify-center items-center ">
+        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 justify-center">
+          <div className="flex flex-col gap-8 xl:gap-16 justify-center items-center ">
             <div className="flex gap-2 items-center">
               <svg
                 className="mb-2 fill-gray-800"
@@ -70,10 +77,12 @@ function Home() {
               >
                 <path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path>
               </svg>
-              <p className="text-4xl text-gray-800 font-bold">About me</p>
+              <p className="xl:text-4xl text-3xl text-gray-800 font-bold">
+                About me
+              </p>
             </div>
 
-            <div className="flex flex-col gap-6 text-xl xl:text-3xl text-gray-500 ">
+            <div className="flex flex-col xl:gap-6 gap-2 text-xl xl:text-3xl text-gray-500 ">
               <Reveal>
                 <p
                   className=" "
@@ -81,12 +90,13 @@ function Home() {
                     textIndent: "50px",
                   }}
                 >
-                  I am a graduate in Cybernetics, Statistics, and Economic
-                  Informatics from Transilvania University of Brașov. I live in
-                  Ianca, Brăila, România. Since I was a kid I had a passion for
-                  design, that's why I chose to focus on Front-End development.{" "}
-                  <br />I am very eager to improve my coding skills by
-                  developing websites and applications.
+                  I am a passionate full-stack developer with experience in
+                  React and .NET, focused on creating complete web solutions.
+                  From front-end to back-end, I am eager to continuously improve
+                  my skills by developing high-performance applications and
+                  websites. Additionally, I possess an analytical and objective
+                  mindset, supported by a solid academic background in economic
+                  informatics.
                 </p>
               </Reveal>
               <Reveal>
@@ -105,11 +115,11 @@ function Home() {
                   <button
                     onClick={() =>
                       window.open(
-                        "https://drive.google.com/file/d/1n0yyw116IZTDBkwjz8riYR2IrTiPLnVv/view?usp=sharing",
+                        "https://drive.google.com/file/d/1UJ1VD5QoibckWl9WvyejOWAM8u4EV4LV/view?usp=drive_link",
                         "_blank"
                       )
                     }
-                    className="w-64 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-lg"
+                    className="xl:w-64 w-56 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-lg"
                   >
                     Open Resume
                   </button>
@@ -117,11 +127,11 @@ function Home() {
               </Reveal>
             </div>
 
-            <p className="justify-center text-4xl font-bold text-gray-800 mt-14">
+            <p className="justify-center text-3xl xl:text-4xl mb-2 xl:mb-6 font-bold text-gray-800 mt-6 xl:mt-14">
               Skills:
             </p>
             <Reveal>
-              <div className="flex gap-2 xl:gap-10">
+              <div className="grid grid-cols-3 justify-items-center xl:grid-cols-4 gap-6 xl:gap-8">
                 <Card
                   logo={
                     <svg
@@ -167,10 +177,11 @@ function Home() {
                   }
                   name="CSS"
                 />
-              </div>
-            </Reveal>
-            <Reveal>
-              <div className="flex gap-2 xl:gap-10">
+                <Card
+                  logo={<LogoTailwind className="h-16 w-16 xl:h-24 xl:w-24" />}
+                  name="Tailwind"
+                />
+
                 <Card
                   logo={
                     <svg
@@ -188,8 +199,44 @@ function Home() {
                   name="React"
                 />
                 <Card
-                  logo={<LogoTailwind className="h-16 w-16 xl:h-24 xl:w-24" />}
-                  name="Tailwind"
+                  logo={<LogoCsharp className="h-16 w-16 xl:h-24 xl:w-24" />}
+                  name="C#"
+                />
+                <Card
+                  logo={<LogoDotnet className="h-16 w-16 xl:h-24 xl:w-24" />}
+                  name=".NET"
+                />
+
+                <Card
+                  logo={
+                    <img src={LogoEF} className="h-16 w-16 xl:h-24 xl:w-24" />
+                  }
+                  name="Entity Framework"
+                />
+
+                <Card
+                  logo={
+                    <LogoPostgreSQL className="h-16 w-16 xl:h-24 xl:w-24" />
+                  }
+                  name="PostgreSQL"
+                />
+                <Card
+                  logo={
+                    <img
+                      src={LogoWordPress}
+                      className="h-16 w-16 xl:h-24 xl:w-24"
+                    />
+                  }
+                  name="WordPress"
+                />
+                <Card
+                  logo={
+                    <img
+                      src={LogoFigma}
+                      className="h-16 w-16 xl:h-24 xl:w-24"
+                    />
+                  }
+                  name="Figma"
                 />
                 <Card
                   logo={<LogoPhotoshop className="h-16 w-16 xl:h-24 xl:w-24" />}
@@ -197,7 +244,43 @@ function Home() {
                 />
               </div>
             </Reveal>
+            <div className="flex flex-col items-center gap-6 text-xl xl:text-3xl text-gray-500 ">
+              <div className="flex gap-2 items-center">
+                <p className="text-3xl xl:text-4xl text-gray-800 font-bold">
+                  Projects
+                </p>
+              </div>
 
+              <Reveal>
+                <p
+                  style={{
+                    textIndent: "50px",
+                  }}
+                >
+                  In my personal projects, I’ve had the opportunity to apply a
+                  wide range of technologies, including HTML, CSS, Vanilla
+                  JavaScript, React, .NET, and Entity Framework. I’ve also
+                  worked with various online REST APIs to enhance the
+                  functionality of my applications. These projects showcase my
+                  ability to build both front-end and back-end solutions,
+                  demonstrating my full-stack development skills.
+                </p>
+              </Reveal>
+
+              <Reveal>
+                <div className="mt-6 flex justify-center items-center">
+                  <Link
+                    to="/projects"
+                    className="text-center xl:w-64 w-56 bg-blue-500 hover:bg-blue-400 text-white
+                    font-bold py-2 px-4 border-b-4 border-blue-700
+                    hover:border-blue-500 rounded-lg"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Go to Projects
+                  </Link>
+                </div>
+              </Reveal>
+            </div>
             <Reveal>
               <div className="mt-14 flex flex-col items-center">
                 <p className="text-4xl font-bold text-gray-800">FIND ME ON</p>
