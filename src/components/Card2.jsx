@@ -3,8 +3,8 @@
 const Card2 = ({ teaser, name, description, width, link, link2, hosted }) => {
   return (
     <div
-      className="flex flex-col items-center h-full w-96 md:w-[1000px] md:h-[430px] md:flex-row bg-white border-2 hover:border-gray-200 rounded-lg shadow
-    transition ease-in-out delay-150  hover:scale-110 hover: duration-300"
+      className="flex flex-col items-center h-full w-[23rem] md:w-[900px] md:h-[500px] md:flex-row bg-white border-2 hover:border-gray-200 rounded-lg shadow
+    transition ease-in-out delay-150"
     >
       <img
         className="object-cover rounded-t-lg h-full xl: "
@@ -13,13 +13,13 @@ const Card2 = ({ teaser, name, description, width, link, link2, hosted }) => {
         alt=""
       />
       <div
-        className="flex flex-col gap-4 p-4 leading-normal
+        className="flex flex-col justify-around gap-4 p-4 leading-normal h-full
       "
       >
         <h5 className="mb-2 text-2xl md:text-3xl font-bold tracking-tight text-gray-900  text-center">
           {name}
         </h5>
-        <p className="text-xl md:text-2xl mb-3 font-normal text-gray-700 ">
+        <p className="text-lg md:text-xl mb-3 font-normal text-gray-700 ">
           {description}
         </p>
         <div className="flex justify-around mt-4">

@@ -15,9 +15,13 @@ function Projects() {
           <Reveal>
             <Card2
               teaser={nutritiousFoods}
-              width={"600px"}
+              width={"400px"}
               name="Nutritious Foods"
-              description="This is an e-commerce restaurant online offering personalized meal selections tailored to your fitness needs. The application is built using React for frontend, and .NET for backend."
+              description="This online store specializes in personalized meal selections customized to individual fitness
+needs. The application is meticulously crafted using React for the frontend to ensure a seamless user experience,
+while leveraging .NET for the backend to manage complex data and facilitate secure transactions. It includes features
+such as personalized meal planning, real-time nutritional information, and efficient order management, making it an
+ideal choice for health-conscious consumers seeking tailored dietary solutions."
               link="https://github.com/Stefan10X/nutritious-foods"
               link2="https://nutritious-foods.fly.dev/"
             />
@@ -25,9 +29,13 @@ function Projects() {
           <Reveal>
             <Card2
               teaser={currency}
-              width={"500px"}
-              name="Currency Exchange"
-              description="This is a currency exchange website with real time update for over 150 currencies. For this website I have used React JS with an online API"
+              width={"400px"}
+              name="Currency Converter"
+              description="This currency exchange website offers real-time updates for over 150 currencies worldwide.
+Developed using React JS, the interface provides intuitive navigation and responsive design, ensuring a seamless
+
+user experience across devices. The integration of an online API allows the application to fetch and display up-to-
+date exchange rates, enabling users to perform accurate currency conversions instantly."
               link="https://github.com/Stefan10X/currency-exchange"
               link2="https://currency-exchange-stefan.vercel.app/"
             />
@@ -35,9 +43,9 @@ function Projects() {
           <Reveal>
             <Card2
               teaser={dogs}
-              width={"500px"}
+              width={"400px"}
               name="Dogs World"
-              description="This is a website containing info about a lot of dog breeds. For this website I have used vanilla JavaScript with an online API"
+              description="This is a website containing detailed information about a wide variety of dog breeds. For this website, I used Vanilla JavaScript to create an interactive user experience, and integrated an online API to fetch real-time data about each breed. Users can explore characteristics, temperament, and other key details for each breed."
               link="https://github.com/Stefan10X/Dogs-World"
               link2="https://stefan10x.github.io/Dogs-World/"
             />
