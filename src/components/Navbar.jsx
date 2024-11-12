@@ -43,13 +43,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 w-full z-20  ${
+      className={`sticky top-0 z-20 w-full ${
         color
-          ? "opacity-90 backdrop-blur-sm bg-blue-700 transition duration-300 ease-in-out"
-          : "bg-blue-800 "
+          ? "bg-blue-700 opacity-90 backdrop-blur-sm transition duration-300 ease-in-out"
+          : "bg-blue-800"
       }`}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
         <Link
           to="/"
           onClick={() => {
@@ -58,11 +58,11 @@ const Navbar = () => {
           }}
           className="flex items-center"
         >
-          <img src={logo} className=" w-24 cursor-pointer" alt="Logo" />
+          <img src={logo} className="w-24 cursor-pointer" alt="Logo" />
         </Link>
 
         <div className="hidden w-full md:block md:w-auto">
-          <ul className="font-medium flex gap-6 p-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 mt-4 text-2xl text-white">
+          <ul className="mt-4 flex gap-6 p-4 text-2xl font-medium text-white md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0">
             <CustomLink
               to="/"
               className="flex items-center gap-1 hover:underline"
@@ -115,11 +115,10 @@ const Navbar = () => {
                 onClick={() =>
                   window.open(
                     "https://github.com/Stefan10X/portofolio",
-                    "_blank"
+                    "_blank",
                   )
                 }
-                className="flex justify-center items-center gap-1 p-2 rounded-lg h-10 w-20
-            transition ease-in-out delay-150 border-solid border-2 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-700 duration-300"
+                className="flex h-10 w-20 items-center justify-center gap-1 rounded-lg border-2 border-solid p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-700"
               >
                 <svg
                   stroke="currentColor"
@@ -153,11 +152,11 @@ const Navbar = () => {
         <button
           onClick={handleNav}
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          className="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
         >
           <span className="sr-only">Open main menu</span>
           <svg
-            className="w-8 h-8 fill-white"
+            className="h-8 w-8 fill-white"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -171,25 +170,25 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "z-20 md:hidden fixed left-0 top-0 h-full  bg-blue-700 ease-in-out duration-500"
-              : "fixed h-full left-[-100%]"
+              ? "fixed left-0 top-0 z-20 h-full bg-blue-700 duration-500 ease-in-out md:hidden"
+              : "fixed left-[-100%] h-full"
           }
         >
-          <ul className="font-medium flex items-start justify-center gap-16 p-4 md:p-0 flex-col md:space-x-8 md:mt-0 md:border-0  text-2xl text-white">
+          <ul className="flex flex-col items-start justify-center gap-16 p-4 text-2xl font-medium text-white md:mt-0 md:space-x-8 md:border-0 md:p-0">
             <Link
               to="/"
               onClick={() => {
                 pageRefresh();
                 handlePageClick();
               }}
-              className="flex items-center "
+              className="flex items-center"
             >
-              <img src={logo} className=" w-24 cursor-pointer" alt="Logo" />
+              <img src={logo} className="w-24 cursor-pointer" alt="Logo" />
             </Link>
 
             <CustomLink
               to="/"
-              className="flex items-center gap-1 hover:underline "
+              className="flex items-center gap-1 hover:underline"
               onClick={() => {
                 handlePageClick();
               }}
@@ -211,7 +210,7 @@ const Navbar = () => {
 
             <CustomLink
               to="/projects"
-              className="flex items-center gap-1 hover:underline "
+              className="flex items-center gap-1 hover:underline"
               onClick={() => {
                 handlePageClick();
               }}
@@ -234,11 +233,8 @@ const Navbar = () => {
               <p>Projects</p>
             </CustomLink>
 
-            <li className="self-center ">
-              <button
-                className="flex justify-center items-center gap-1 p-2 rounded-lg h-10 w-20
-            transition ease-in-out delay-150 border-solid border-2 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-700 duration-300"
-              >
+            <li className="self-center">
+              <button className="flex h-10 w-20 items-center justify-center gap-1 rounded-lg border-2 border-solid p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-700">
                 <svg
                   stroke="currentColor"
                   fill="none"
@@ -280,7 +276,7 @@ function CustomLink({ to, children, ...props }) {
 
   return (
     <li className={isActive ? "underline" : ""}>
-      <div className="flex justify-center items-center">
+      <div className="flex items-center justify-center">
         <Link to={to} {...props}>
           {children}
         </Link>

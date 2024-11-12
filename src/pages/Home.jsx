@@ -9,8 +9,8 @@ import { ReactComponent as LogoTailwind } from "../images/tailwind-logo.svg";
 import { ReactComponent as LogoPhotoshop } from "../images/Photoshop-logo.svg";
 import { ReactComponent as LogoCsharp } from "../images/csharp-logo.svg";
 import { ReactComponent as LogoDotnet } from "../images/Microsoft_.NET_logo.svg";
-import { ReactComponent as LogoPostgreSQL } from "../images/postgresql-logo.svg";
-import LogoEF from "../images/ef-logo.png";
+import LogoPHP from "../images/PHP-logo.png";
+import LogoMySql from "../images/MySQL-logo.png";
 import LogoWordPress from "../images/wordpress-logo.png";
 import LogoFigma from "../images/figma-logo.png";
 import Reveal from "../components/Reveal";
@@ -35,25 +35,25 @@ function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className=" bg-blue-800 text-white z-0">
-        <div className="grid max-w-screen-xl h-[650px] px-4 py-8 mx-auto lg:gap-8 lg:py-16 lg:grid-cols-12 justify-center">
+      <section className="z-0 bg-blue-800 text-white">
+        <div className="mx-auto grid h-[650px] max-w-screen-xl justify-center px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <div className="flex flex-col gap-2 max-w-2xl mb-4 text-4xl tracking-tight leading-none md:text-4xl xl:text-5xl">
+            <div className="mb-4 flex max-w-2xl flex-col gap-2 text-4xl leading-none tracking-tight md:text-4xl xl:text-5xl">
               <p>Hello!</p>
               <p>
                 My name is <br />
                 Ștefan Pisică
               </p>
             </div>
-            <div className="max-w-2xl mb-6 font-light text-xl lg:mb-8  lg:text-4xl dark:text-gray-400">
+            <div className="mb-6 max-w-2xl text-xl font-light dark:text-gray-400 lg:mb-8 lg:text-4xl">
               <span>I'm a </span>
               <span>{text}</span>
               <Cursor />
             </div>
           </div>
-          <div className=" lg:mt-0 lg:col-span-5 lg:flex lg: items-center">
+          <div className="lg: items-center lg:col-span-5 lg:mt-0 lg:flex">
             <LazyLoadImage
-              className="w-60  xl:w-80 card rounded-3xl z-0 border-4 "
+              className="card z-0 w-60 rounded-3xl border-4 xl:w-80"
               src={image}
               alt="My Image"
               effect="blur"
@@ -63,9 +63,9 @@ function Home() {
       </section>
       {/* Introduction */}
       <section className="bg-color-white">
-        <div className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 justify-center">
-          <div className="flex flex-col gap-8 xl:gap-16 justify-center items-center ">
-            <div className="flex gap-2 items-center">
+        <div className="mx-auto max-w-screen-xl justify-center px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+          <div className="flex flex-col items-center justify-center gap-8 xl:gap-16">
+            <div className="flex items-center gap-2">
               <svg
                 className="mb-2 fill-gray-800"
                 stroke="currentColor"
@@ -77,12 +77,12 @@ function Home() {
               >
                 <path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path>
               </svg>
-              <p className="xl:text-4xl text-3xl text-gray-800 font-bold">
+              <p className="text-3xl font-bold text-gray-800 xl:text-4xl">
                 About me
               </p>
             </div>
 
-            <div className="flex flex-col xl:gap-6 gap-2 text-xl xl:text-3xl text-gray-500 ">
+            <div className="flex flex-col gap-2 text-xl text-gray-500 xl:gap-6 xl:text-3xl">
               <Reveal>
                 <p
                   className=" "
@@ -100,26 +100,26 @@ function Home() {
                 </p>
               </Reveal>
               <Reveal>
-                <div className="flex gap-4 mt-6 items-center ">
-                  <p className=" font-bold text-gray-800">Email:</p>
+                <div className="mt-6 flex items-center gap-4">
+                  <p className="font-bold text-gray-800">Email:</p>
                   <p>stefan.pisica01@gmail.com</p>
                 </div>
 
-                <div className="flex gap-4 justify-self-start ">
+                <div className="flex gap-4 justify-self-start">
                   <p className="font-bold text-gray-800">Phone:</p>
                   <p>+40764589289</p>
                 </div>
               </Reveal>
               <Reveal>
-                <div className="mt-6 flex justify-center items-center">
+                <div className="mt-6 flex items-center justify-center">
                   <button
                     onClick={() =>
                       window.open(
                         "https://drive.google.com/file/d/1UJ1VD5QoibckWl9WvyejOWAM8u4EV4LV/view?usp=drive_link",
-                        "_blank"
+                        "_blank",
                       )
                     }
-                    className="xl:w-64 w-56 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-lg"
+                    className="w-56 rounded-lg border-b-4 border-blue-700 bg-blue-500 px-4 py-2 font-bold text-white hover:border-blue-500 hover:bg-blue-400 xl:w-64"
                   >
                     Open Resume
                   </button>
@@ -127,15 +127,15 @@ function Home() {
               </Reveal>
             </div>
 
-            <p className="justify-center text-3xl xl:text-4xl mb-2 xl:mb-6 font-bold text-gray-800 mt-6 xl:mt-14">
+            <p className="mb-2 mt-6 justify-center text-3xl font-bold text-gray-800 xl:mb-6 xl:mt-14 xl:text-4xl">
               Skills:
             </p>
             <Reveal>
-              <div className="grid grid-cols-3 justify-items-center xl:grid-cols-4 gap-6 xl:gap-8">
+              <div className="grid grid-cols-3 justify-items-center gap-6 xl:grid-cols-4 xl:gap-8">
                 <Card
                   logo={
                     <svg
-                      className="fill-yellow-300 h-16 w-16 xl:h-24 xl:w-24"
+                      className="h-16 w-16 fill-yellow-300 xl:h-24 xl:w-24"
                       xmlns="http://www.w3.org/2000/svg"
                       width="5.5em"
                       height="5.5em"
@@ -150,7 +150,7 @@ function Home() {
                 <Card
                   logo={
                     <svg
-                      className="fill-orange-500 h-16 w-16 xl:h-24 xl:w-24"
+                      className="h-16 w-16 fill-orange-500 xl:h-24 xl:w-24"
                       stroke="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 384 512"
@@ -166,7 +166,7 @@ function Home() {
                 <Card
                   logo={
                     <svg
-                      className="fill-blue-600 h-16 w-16 xl:h-24 xl:w-24"
+                      className="h-16 w-16 fill-blue-600 xl:h-24 xl:w-24"
                       stroke="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 384 512"
@@ -185,7 +185,7 @@ function Home() {
                 <Card
                   logo={
                     <svg
-                      className="fill-cyan-300 h-16 w-16 xl:h-24 xl:w-24"
+                      className="h-16 w-16 fill-cyan-300 xl:h-24 xl:w-24"
                       stroke="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 512 512"
@@ -209,16 +209,19 @@ function Home() {
 
                 <Card
                   logo={
-                    <img src={LogoEF} className="h-16 w-16 xl:h-24 xl:w-24" />
+                    <img
+                      src={LogoMySql}
+                      className="h-16 w-16 xl:h-24 xl:w-24"
+                    />
                   }
-                  name="Entity Framework"
+                  name="MySQL"
                 />
 
                 <Card
                   logo={
-                    <LogoPostgreSQL className="h-16 w-16 xl:h-24 xl:w-24" />
+                    <img src={LogoPHP} className="h-16 w-16 xl:h-24 xl:w-24" />
                   }
-                  name="PostgreSQL"
+                  name="PHP"
                 />
                 <Card
                   logo={
@@ -244,9 +247,9 @@ function Home() {
                 />
               </div>
             </Reveal>
-            <div className="flex flex-col items-center gap-6 text-xl xl:text-3xl text-gray-500 ">
-              <div className="flex gap-2 items-center">
-                <p className="text-3xl xl:text-4xl text-gray-800 font-bold">
+            <div className="flex flex-col items-center gap-6 text-xl text-gray-500 xl:text-3xl">
+              <div className="flex items-center gap-2">
+                <p className="text-3xl font-bold text-gray-800 xl:text-4xl">
                   Projects
                 </p>
               </div>
@@ -268,12 +271,10 @@ function Home() {
               </Reveal>
 
               <Reveal>
-                <div className="mt-6 flex justify-center items-center">
+                <div className="mt-6 flex items-center justify-center">
                   <Link
                     to="/projects"
-                    className="text-center xl:w-64 w-56 bg-blue-500 hover:bg-blue-400 text-white
-                    font-bold py-2 px-4 border-b-4 border-blue-700
-                    hover:border-blue-500 rounded-lg"
+                    className="w-56 rounded-lg border-b-4 border-blue-700 bg-blue-500 px-4 py-2 text-center font-bold text-white hover:border-blue-500 hover:bg-blue-400 xl:w-64"
                     onClick={() => window.scrollTo(0, 0)}
                   >
                     Go to Projects
@@ -287,13 +288,12 @@ function Home() {
                 <p className="text-xl text-gray-500">
                   Feel free to connect with me
                 </p>
-                <div className="flex gap-10 mt-6">
+                <div className="mt-6 flex gap-10">
                   <svg
                     onClick={() =>
                       window.open("https://github.com/Stefan10X", "_blank")
                     }
-                    className="cursor-pointer border border-gray-300 border-solid rounded-lg p-2 w-14 h-14 bg-indigo-700
-                transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300"
+                    className="hover: h-14 w-14 cursor-pointer rounded-lg border border-solid border-gray-300 bg-indigo-700 p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
                     stroke="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 1024 1024"
@@ -305,11 +305,10 @@ function Home() {
                     onClick={() =>
                       window.open(
                         "https://www.linkedin.com/in/stefan-pisica-b6110a258/",
-                        "_blank"
+                        "_blank",
                       )
                     }
-                    className="cursor-pointer border border-gray-300 border-solid rounded-lg p-3 w-14 h-14 bg-blue-600
-              transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300"
+                    className="hover: h-14 w-14 cursor-pointer rounded-lg border border-solid border-gray-300 bg-blue-600 p-3 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
                     stroke="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 448 512"
@@ -321,11 +320,10 @@ function Home() {
                     onClick={() =>
                       window.open(
                         "https://www.instagram.com/stefan10x/",
-                        "_blank"
+                        "_blank",
                       )
                     }
-                    className="cursor-pointer border border-gray-300 border-solid rounded-lg p-2 w-14 h-14 bg-pink-500
-              transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300"
+                    className="hover: h-14 w-14 cursor-pointer rounded-lg border border-solid border-gray-300 bg-pink-500 p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
                     stroke="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 1024 1024"

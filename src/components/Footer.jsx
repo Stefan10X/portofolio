@@ -1,10 +1,6 @@
 function Footer() {
   return (
-    <footer
-      className="w-full xl:h-8
-      grid gap-2 p-2 xl:gap-6 xl:grid-cols-3 items-center text-center place-items-center
-      text-1xl bg-blue-600 text-white"
-    >
+    <footer className="text-1xl grid w-full place-items-center items-center gap-2 bg-blue-600 p-2 text-center text-white xl:h-8 xl:grid-cols-3 xl:gap-6">
       <p>Designed and Developed by Ștefan Pisică</p>
       <p>Copyright © 2024 ȘP</p>
       <div className="flex gap-7">
@@ -25,7 +21,7 @@ function Footer() {
           onClick={() =>
             window.open(
               "https://www.linkedin.com/in/stefan-pisica-b6110a258/",
-              "_blank"
+              "_blank",
             )
           }
           className="cursor-pointer"

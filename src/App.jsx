@@ -16,7 +16,6 @@ const App = () => {
   return (
     <div className="flex flex-col">
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

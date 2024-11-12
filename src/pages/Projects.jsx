@@ -6,10 +6,10 @@ import Reveal from "../components/Reveal";
 
 function Projects() {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center">
-      <div className="max-w-screen-xl mb-16">
-        <div className="flex flex-col mt-12 xl:mt-20 gap-10 items-center md:gap-16 ">
-          <h1 className="text-3xl md:text-4xl text-gray-900 text-center font-bold">
+    <div className="flex min-h-screen flex-col items-center bg-white">
+      <div className="mb-16 max-w-screen-xl">
+        <div className="mt-12 flex flex-col items-center gap-10 md:gap-16 xl:mt-20">
+          <h1 className="text-center text-3xl font-bold text-gray-900 md:text-4xl">
             These are my personal projects:{" "}
           </h1>
           <Reveal>

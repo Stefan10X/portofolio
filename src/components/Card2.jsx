@@ -2,32 +2,25 @@
 // eslint-disable-next-line react/prop-types
 const Card2 = ({ teaser, name, description, width, link, link2, hosted }) => {
   return (
-    <div
-      className="flex flex-col items-center h-full w-[23rem] md:w-[900px] md:h-[500px] md:flex-row bg-white border-2 hover:border-gray-200 rounded-lg shadow
-    transition ease-in-out delay-150"
-    >
+    <div className="flex h-full w-[23rem] flex-col items-center rounded-lg border-2 bg-white shadow transition delay-150 ease-in-out hover:border-gray-200 md:h-[500px] md:w-[900px] md:flex-row">
       <img
-        className="object-cover rounded-t-lg h-full xl: "
+        className="xl: h-full rounded-t-lg object-cover"
         width={width}
         src={teaser}
         alt=""
       />
-      <div
-        className="flex flex-col justify-around gap-4 p-4 leading-normal h-full
-      "
-      >
-        <h5 className="mb-2 text-2xl md:text-3xl font-bold tracking-tight text-gray-900  text-center">
+      <div className="flex h-full flex-col justify-around gap-4 p-4 leading-normal">
+        <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 md:text-3xl">
           {name}
         </h5>
-        <p className="text-lg md:text-xl mb-3 font-normal text-gray-700 ">
+        <p className="mb-3 text-lg font-normal text-gray-700 md:text-xl">
           {description}
         </p>
-        <div className="flex justify-around mt-4">
+        <div className="mt-4 flex justify-around">
           {" "}
           <button
             onClick={() => window.open(link, "_blank")}
-            className="flex justify-center items-center gap-1 w-28 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-lg
-           "
+            className="flex w-28 items-center justify-center gap-1 rounded-lg border-b-4 border-blue-700 bg-blue-500 px-4 py-2 font-bold text-white hover:border-blue-500 hover:bg-blue-400"
           >
             <svg
               className="w-4"
@@ -44,8 +37,7 @@ const Card2 = ({ teaser, name, description, width, link, link2, hosted }) => {
           {!hosted && (
             <button
               onClick={() => window.open(link2, "_blank")}
-              className="flex justify-center items-center gap-1 w-28 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-lg
-           "
+              className="flex w-28 items-center justify-center gap-1 rounded-lg border-b-4 border-blue-700 bg-blue-500 px-4 py-2 font-bold text-white hover:border-blue-500 hover:bg-blue-400"
             >
               <svg
                 className="w-4"
